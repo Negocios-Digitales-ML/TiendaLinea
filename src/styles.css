@@ -45,3 +45,50 @@ text-align: center;
     height: 30px;
     width: 30px;
 }
+
+
+.content {
+    display: block;
+    border: 1px solid;
+    min-height: calc(100vh - 80px);
+    margin-left: 10%;
+    text-align: center;
+    width: 80%;
+  
+    .producto {
+      display: inline-block;
+      margin-left: 5px;
+      margin-top: 5px;
+      width: 300px;
+    } 
+  }
+
+  .content {
+    display: block;
+    border: 1px solid;
+    min-height: calc(100vh - 80px);
+    margin-left: 10%;
+    text-align: center;
+    width: 80%;
+  }
+  
+  .header {
+    background-color: blueviolet;
+    border: 1px solid;
+    border-radius: 5px;
+    border-radius: 10px;
+    color: white;
+    min-height: 40px;
+    width: 100%;
+  }
+  
+  .footer {
+    background-color: blueviolet;
+    border: 1px solid;
+    border-radius: 5px;
+    border-radius: 10px;
+    color: white;
+    min-height: 40px;
+    width: 100%;
+  }
+  

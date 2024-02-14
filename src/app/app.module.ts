@@ -11,6 +11,7 @@ import { HeaderComponent } from './componentes/plantillas/header/header.componen
 import { FooterComponent } from './componentes/plantillas/footer/footer.component';
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
+import { ProductosModule } from './modulos/productos/productos.module';
 
 
 
@@ -29,7 +30,8 @@ import { SidebarModule } from 'primeng/sidebar';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     ButtonModule,
-    SidebarModule
+    SidebarModule,
+    ProductosModule
   ],
   providers: [
     MessageService,
