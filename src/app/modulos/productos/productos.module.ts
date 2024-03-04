@@ -6,6 +6,11 @@ import { CardModule } from 'primeng/card';
 import { ModprimengModule } from '../../modprimeng.module';
 import { ButtonModule } from 'primeng/button';
 import { HttpClientModule } from '@angular/common/http';
+import { RatingModule } from 'primeng/rating';
+import { FormsModule } from '@angular/forms';
+import { DataViewModule } from 'primeng/dataview';
+import { TagModule } from 'primeng/tag';
+
 
 
 @NgModule({
@@ -18,7 +23,11 @@ import { HttpClientModule } from '@angular/common/http';
     ModprimengModule,
     CardModule,
     ButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    RatingModule,
+    FormsModule, 
+    DataViewModule,
+    TagModule
   ],
   exports: [
     ProductosListaComponent,

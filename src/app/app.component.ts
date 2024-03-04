@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mlg-store';
+
+  showCart: boolean = false
+
+  toggleCart(){
+    this.showCart = !this.showCart
+  }
 }

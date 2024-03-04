@@ -1,9 +1,8 @@
 {
-    "productos": [
-      {"id":"1", "nombre":"WebCam", "descripcion":"WebCam descripcion", "precio":400, "imagen":""},
-      {"id":"2", "nombre":"Teclado", "descripcion":"Teclado descripcion", "precio":420, "imagen":""},
-      {"id":"3", "nombre":"Ratón", "descripcion":"Ratón descripcion", "precio":600, "imagen":""},
-      {"id":"4", "nombre":"Lámpara", "descripcion":"Ratón descripcion", "precio":1000, "imagen":""}
-    ]
-  }
-  
+  "productos": [
+      {"id":"1", "nombre":"WebCam", "descripcion":"WebCam descripcion", "precio":400, "imagen":"https://resource.logitech.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/c922/gallery/c922-gallery-1.png?v=1", "ranking": 4, "anoSalida": 2022, "fabricante": "LG"},
+      {"id":"2", "nombre":"Teclado", "descripcion":"Teclado descripcion", "precio":420, "imagen":"https://cdn1.coppel.com/images/catalog/pm/2306153-1.jpg", "ranking": 3,"anoSalida": 2019, "fabricante": "Samsung"},
+      {"id":"3", "nombre":"Ratón", "descripcion":"Ratón descripcion", "precio":600, "imagen":"https://m.media-amazon.com/images/I/61+OtcxTeGL._AC_UF1000,1000_QL80_.jpg", "ranking": 5, "anoSalida": 2020, "fabricante": "Nvidia"},
+      {"id":"4", "nombre":"Lámpara", "descripcion":"Lámpara descripcion", "precio":1000, "imagen":"https://storage.googleapis.com/betterware-production-media/products/23848-1-Lampara-Delluxe-Betterware.jpg", "ranking": 2,"anoSalida": 2024, "fabricante": "Apple"}
+  ]
+}

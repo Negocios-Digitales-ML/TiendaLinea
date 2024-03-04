@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ModprimengModule } from './modprimeng.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MessageService } from 'primeng/api';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './componentes/plantillas/header/header.component';
@@ -12,6 +12,7 @@ import { FooterComponent } from './componentes/plantillas/footer/footer.componen
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
 import { ProductosModule } from './modulos/productos/productos.module';
+import { CartComponent } from './componentes/cart/cart.component';
 
 
 
@@ -20,7 +21,8 @@ import { ProductosModule } from './modulos/productos/productos.module';
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { ProductosModule } from './modulos/productos/productos.module';
     BrowserAnimationsModule,
     ButtonModule,
     SidebarModule,
-    ProductosModule
+    ProductosModule,
+    FormsModule
   ],
   providers: [
     MessageService,
@@ -39,4 +42,8 @@ import { ProductosModule } from './modulos/productos/productos.module';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+    localStorage.setItem('cart', JSON.stringify([]))
+  }
+ }
