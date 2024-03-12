@@ -13,6 +13,7 @@ import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
 import { ProductosModule } from './modulos/productos/productos.module';
 import { CartComponent } from './componentes/cart/cart.component';
+import { DialogService } from 'primeng/dynamicdialog';
 
 
 
@@ -38,7 +39,8 @@ import { CartComponent } from './componentes/cart/cart.component';
   ],
   providers: [
     MessageService,
-    provideClientHydration()
+    provideClientHydration(),
+    DialogService
   ],
   bootstrap: [AppComponent]
 })

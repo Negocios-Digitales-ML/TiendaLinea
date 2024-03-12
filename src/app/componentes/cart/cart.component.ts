@@ -14,4 +14,8 @@ export class CartComponent {
   ngOnInit(): void{
     this.cart = JSON.parse(localStorage.getItem('cart')as string);
   }
+
+  calcularTotal(): number{
+    return this.cart.reduce((total, producto) => total + producto.precio * producto.cantidad, 0);
+  }
 }
